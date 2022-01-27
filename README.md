@@ -13,3 +13,5 @@ this is in **bold**
 1. difficulty #1
 3. difficulty #3
 3. difficulty #2
+
+![myhomework](cactus.jpg)
