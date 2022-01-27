@@ -9,3 +9,7 @@ this is in **bold**
 ### even smaller
 #### tiny
 ##### really tiny
+
+1. difficulty #1
+3. difficulty #3
+3. difficulty #2
