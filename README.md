@@ -2,7 +2,7 @@
 this is paragraph one
 
 here's another paragraph
-
+![cake](Heart-Cake.jpeg)
 this is in *italics*
 this is in **bold** 
 ## slightly smaller
