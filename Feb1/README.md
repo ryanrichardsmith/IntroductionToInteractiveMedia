@@ -1,2 +1,2 @@
 # Screenshot of Sketch
-![](media/portrait.png)
+![](portrait.png)
