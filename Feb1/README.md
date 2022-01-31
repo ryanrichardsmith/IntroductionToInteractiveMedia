@@ -1,5 +1,6 @@
 # Screenshot of Sketch
 <img src ="portrait.png" width=70% height=70%>
+
 # My Experience 
 - I enjoyed experimenting with the layering of shapes to create a cohesive image (for example I layered circles on top of each other for my eyes)
 - I appreciated the freedom that comes with the RGB color scheme because it made it easy to come up with a skin tone that matched me
