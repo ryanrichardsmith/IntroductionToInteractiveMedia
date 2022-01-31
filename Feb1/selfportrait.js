@@ -3,7 +3,7 @@ function setup() {
 }
 
 function draw() {
-  //pride flag backdrop
+  //drawing the pride flag backdrop
   fill(255,0,0);
   noStroke();
   rect(0,0,width,height/6);
@@ -28,7 +28,7 @@ function draw() {
   fill(255);
   triangle(84,200,-172,-300,-172,700);
     
-  //hair
+  //drawing my hair
   stroke(0);
   fill(0);
   ellipse(350,107,220,200)
@@ -58,11 +58,11 @@ function draw() {
   circle(443,153,25)
   circle(433,168,25)
   
-  //head
+  //drawing my head
   fill(198, 134, 66)
   ellipse(350,160,158,200);
   
-  //eyes
+  //drawing eyes & eyebrows
   fill(255)
   circle(315,131,40)
   circle(383,131,40)
@@ -77,7 +77,7 @@ function draw() {
   arc(315,131, 40, 40, radians(180), 0)
   arc(383,131,40,40, radians(180),0)
   
-  //shirt
+  //drawing my shirt/torso
   stroke(0)
   fill(210)
   arc(349,460,210,400, radians(180), 0)
@@ -91,4 +91,39 @@ function draw() {
   line(401,181,429,162)
   line(298,106,329,106)
   line(367, 106, 398,106)
+  
+  //mushrooms
+  fill(245,222,179)
+  ellipse(534, 60, 30, 60)
+  fill(220,20,60)
+  arc(535,50,70, 70, radians(180), 0)
+  fill(255)
+  circle(523, 29, 10)
+  circle(551,35, 15)
+  
+  fill(245,222,179)
+  ellipse(534, 162, 30, 60)
+  fill(220,20,60)
+  arc(534,152,70, 70, radians(180), 0)
+  fill(255)
+  circle(554, 133, 10)
+  circle(521,132, 15)
+  
+  fill(245,222,179)
+  ellipse(536, 274, 30, 60)
+  fill(220,20,60)
+  arc(536,265,70, 70, radians(180), 0)
+  fill(255)
+  circle(535, 239, 10)
+  circle(558,256, 15)
+  circle(518,250,15)
+  
+  fill(245,222,179)
+  ellipse(538, 365, 30, 60)
+  fill(220,20,60)
+  arc(539,355,70, 70, radians(180), 0)
+  fill(255)
+  circle(538, 328, 10)
+  circle(521, 347, 10)
+  circle(560,345, 15)
 }
