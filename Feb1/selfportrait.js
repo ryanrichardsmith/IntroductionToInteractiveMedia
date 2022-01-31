@@ -4,19 +4,20 @@ function setup() {
 
 function draw() {
   //drawing the pride flag backdrop
+  let rectheight = height/6
   fill(255,0,0);
   noStroke();
-  rect(0,0,width,height/6);
+  rect(0,0,width,rectheight)
   fill(255,165,0);
-  rect(0,height/6,width,height/6);
+  rect(0,rectheight,width,rectheight);
   fill(255,255,0);
-  rect(0,(height/6)*2,width,height/6);
+  rect(0,rectheight*2,width,rectheight);
   fill(50,205,50);
-  rect(0,(height/6)*3,width,height/6);
+  rect(0,rectheight*3,width,rectheight);
   fill(0,0,255);
-  rect(0,(height/6)*4,width,height/6);
+  rect(0,rectheight*4,width,rectheight);
   fill(148,0,211);
-  rect(0,(height/6)*5,width,height/6);
+  rect(0,rectheight*5,width,rectheight);
   fill(0);
   triangle(256,200,0,-300,0,700);
   fill(139,69,19);
@@ -29,50 +30,54 @@ function draw() {
   triangle(84,200,-172,-300,-172,700);
     
   //drawing my hair
+  let d = 25 //d is for diameter
   stroke(0);
   fill(0);
   ellipse(350,107,220,200)
-  circle(347,13,25)
-  circle(330,15,25)
-  circle(313,20,25)
-  circle(297,30,25)
-  circle(280,40,25)
-  circle(265,50,25)
-  circle(254,65,25)
-  circle(250,78,25)
-  circle(246,89,25)
-  circle(245,109,25)
-  circle(248,130,25)
-  circle(258,150,25)
-  circle(268,169,25)  
-  circle(368,15,25)
-  circle(385,18,25)
-  circle(403,25,25)
-  circle(420,35,25)
-  circle(436,52,25)
-  circle(446,68,25)
-  circle(452,83,25)
-  circle(456,101,25)
-  circle(456,119,25)
-  circle(451,137,25)
-  circle(443,153,25)
-  circle(433,168,25)
+  circle(347,13,d)
+  circle(330,15,d)
+  circle(313,20,d)
+  circle(297,30,d)
+  circle(280,40,d)
+  circle(265,50,d)
+  circle(254,65,d)
+  circle(250,78,d)
+  circle(246,89,d)
+  circle(245,109,d)
+  circle(248,130,d)
+  circle(258,150,d)
+  circle(268,169,d)  
+  circle(368,15,d)
+  circle(385,18,d)
+  circle(403,25,d)
+  circle(420,35,d)
+  circle(436,52,d)
+  circle(446,68,d)
+  circle(452,83,d)
+  circle(456,101,d)
+  circle(456,119,d)
+  circle(451,137,d)
+  circle(443,153,d)
+  circle(433,168,d)
   
   //drawing my head
   fill(198, 134, 66)
   ellipse(350,160,158,200);
   
-  //drawing eyes & eyebrows
+  //drawing eyes 
   fill(255)
   circle(315,131,40)
   circle(383,131,40)
+  //drawing my irises
   fill(84,42,14)
   circle(315,131,20)
   circle(383,131,20)
+  //drawing my pupils
   fill(0)
   circle(315,131,10)
   circle(383,131,10)
   fill(198, 134, 66)
+  //drawing my eyelids
   noStroke()
   arc(315,131, 40, 40, radians(180), 0)
   arc(383,131,40,40, radians(180),0)
@@ -82,7 +87,7 @@ function draw() {
   fill(210)
   arc(349,460,210,400, radians(180), 0)
   
-  //mask
+  //drawing my mask
   fill(255)
   rect(301,180,100,50)
   line(301,180,272,163)
@@ -92,7 +97,7 @@ function draw() {
   line(298,106,329,106)
   line(367, 106, 398,106)
   
-  //mushrooms
+  //drawing the mushrooms
   fill(245,222,179)
   ellipse(534, 60, 30, 60)
   fill(220,20,60)
