@@ -1,2 +1,2 @@
 # Screenshot of Sketch
-![](portrait.png)
+![](portrait.png|width = 432)
