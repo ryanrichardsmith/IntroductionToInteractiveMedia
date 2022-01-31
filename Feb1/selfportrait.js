@@ -27,9 +27,7 @@ function draw() {
   triangle(127,200,-129,-300,-129,700);
   fill(255);
   triangle(84,200,-172,-300,-172,700);
-  
-  print(mouseX, mouseY)
-  
+    
   //hair
   stroke(0);
   fill(0);
