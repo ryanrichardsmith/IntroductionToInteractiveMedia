@@ -64,7 +64,7 @@ function drawWatermelon(x,y) {
 }
 
 function drawCherries(x,y) {
-  circle(x - 20, y, 100);
-  circle(x + 20, y, 100);
-  line(x - 20,y + 100, x, y + 200);
-}
+  circle(x - 20, y, 50);
+  circle(x + 40, y, 50);
+  line(x + 20, y - 100, x,y - 200, );
+  line(x - 20, y - 100, x, y - 200)
