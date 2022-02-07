@@ -63,8 +63,9 @@ function drawApple(x,y) {
 }
 
 function drawLemon(x,y) {
+  y = y - 20; //to align with other fruits in the row 
   fill(255,255,0);
-  noStroke()
+  noStroke();
   ellipse(x,y,150,100);
   ellipse(x-75,y,25,25);
   ellipse(x+75, y,25,25);
