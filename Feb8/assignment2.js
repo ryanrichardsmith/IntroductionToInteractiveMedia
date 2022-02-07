@@ -8,10 +8,11 @@ let yCoordinate = 0;
 
 function draw() {
   for (row = 1; row < 5; row = row + 1) {
-    xCoordinate = xCoordinate + 100;
-    for (column = 1; column < 4; column = column +1) {
-      yCoordinate = yCoordinate + 150; 
+      xCoordinate = xCoordinate + 50;
+      yCoordinate = 0;
+    for (column = 1; column < 4; column = column + 1) {
       fruit = round(random(1,6));
+      yCoordinate = yCoordinate + 150;
       if (fruit === 1) {
         drawGrapes(xCoordinate,yCoordinate);
       } else {
