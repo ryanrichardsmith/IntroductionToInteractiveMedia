@@ -7,6 +7,7 @@ function draw() {
   drawCherries(100,250);
   drawWatermelon(250,250)
   drawGrapes(400,250);
+  drawOrange(550, 250);
 }
 
 function drawGrapes(x,y) {
@@ -43,4 +44,12 @@ function drawCherries(x,y) {
   line(x - 20, y - 25, x, y - 70);
   fill(50,205,50);
   triangle (x, y - 70, x - 10, y - 90, x - 20, y - 90);
+}
+
+function drawOrange(x,y) {
+  y = y - 30 //to align with other fruits in the row
+  fill(255,140,0);
+  circle(x,y, 100);
+  fill(139, 69, 19);
+  circle(x, y - 40, 10);
 }
