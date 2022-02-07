@@ -8,7 +8,7 @@
 
 - Although I knew I wanted the fruits to be strewn all over the canvas in no order, which would require a loop to avoid repeatedly coding them, but I decided to use the random() function to make things more interesting. As a result, the decision of which fruit to place in each designated position was left to this function.
 - Here is an early index of the fruits I wished to include with corresponding shapes required:
-<img src ="concept.png">
+![](concepts.jpg)
 
 - There were a few difficulties I experienced:
   - While programming the watermelon function, the website would stop responding whenever I tried to randomly place seeds (points) within the radius of the ellipse; I'm unsure of whether the combined effects of the loops, conditionals and randomization required for this had anything to do with that.
