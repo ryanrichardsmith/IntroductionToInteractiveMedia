@@ -1,14 +1,17 @@
-function setup() {
-  createCanvas(400, 400);
-}
-
 function draw() {
   background(220);
   drawWatermelon(250,250);
+  drawGrapes(450, 250)
 }
 
 function drawGrapes(x,y) {
+  let radius = 25;
+  fill(128,0,128);
+  circle(x,y,radius);
+  circle(x - radius, y, radius);
+  circle(x + radius, y, radius);
   circle(x - (1.5*radius), y - radius, radius);
+  circle(x - (radius/2), y - radius, radius);
   circle(x + (radius/2), y - radius, radius);
   circle(x + (1.5*radius), y - radius, radius);
   circle(x - (radius/2), y + radius, radius);
