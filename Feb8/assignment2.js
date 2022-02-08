@@ -1,34 +1,44 @@
 function setup() {
   createCanvas(700, 500);
   background(220);
-}
 
-//initializing variables used to draw varius fruits
-let xCoordinate = 0;
-let yCoordinate = 0;
-
-function draw() {
-  for (row = 1; row < 5; row = row + 1) { //for loop to give each fruit a specific x and y coordinate 
+  //initializing x coordinate used to draw various fruits
+  let xCoordinate = 0;
+  
+  //for loop to give each fruit a specific x coordinate
+  for (row = 1; row < 14; row = row + 1) {
     xCoordinate = xCoordinate + 50;
-    yCoordinate = 0;
+    
+    //initializing y coordinate used to draw various fruits 
+    yCoordinate = 0
+    
+    //for loop to give each fruit a specific y coordinate
     for (column = 1; column < 4; column = column + 1) {
-      fruit = round(random(1, 6)); //randomly selecting a number to determine which fruit is drawn
-      yCoordinate = yCoordinate + 150;
-      if (fruit === 1) { //conditions assigning each fruit to a number
+    yCoordinate = yCoordinate + 150;
+
+      //randomly selecting a number to determine which fruit is drawn
+      fruit = round(random(1, 6)); 
+      
+      //conditions assigning each fruit to a number
+      if (fruit === 1) {
         drawGrapes(xCoordinate, yCoordinate);
       } else {
         if (fruit === 2) {
           drawWatermelon(xCoordinate, yCoordinate);
         } else {
+          
           if (fruit === 3) {
             drawCherries(xCoordinate, yCoordinate);
           } else {
+            
             if (fruit === 4) {
               drawOrange(xCoordinate, yCoordinate);
             } else {
+              
               if (fruit === 5) {
                 drawApple(xCoordinate, yCoordinate);
               } else {
+                
                 if (fruit === 6) {
                   drawLemon(xCoordinate, yCoordinate);
                 }
@@ -102,7 +112,7 @@ function drawApple(x, y) {
 }
 
 function drawLemon(x, y) {
-  y = y - 20;
+  y = y - 20; //to align with other fruits in the row
   fill(255, 255, 0);
   noStroke();
   ellipse(x, y, 150, 100);
