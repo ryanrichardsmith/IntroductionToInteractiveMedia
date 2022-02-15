@@ -5,7 +5,7 @@
 - I also wanted a randomized element, and I was initially going to do each set of squares with the same number of layers and have their colors generated randomly, similar to what the inspiration of this piece was like. Then I got the idea to have it be even more generative and have the computer randomly decide which sets would have one layer, which ones would have two, and so on. 
 - I experimented with the `noise()` function from the assigned tutorial, but I did not like how homogenous the colors were and decided to leave it out:
 <img src ="noise1.png" width = 30% height = 30%/> <img src ="noise2.png" width = 30% height = 30%/>
-
+- The primary difficulty I faced was getting the rows to repeat; the first row would be drawn perfectly, but the susbequent ones were not appearing. I fixed this by editing the method within the class so that it accepts the number telling it what row the program is at. This way, the method determines the row by how many rows have already been counted, rather than having the `for()` telling it what the current row is.
 
 # Video of My Artwork
 https://user-images.githubusercontent.com/98512630/153991526-4d25f78a-b884-4cc0-9295-f9a55fb1c07a.mov
