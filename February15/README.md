@@ -7,6 +7,7 @@
 <p float="left">
   <img src ="/noise1.png" width = 30% height = 30%/> 
   <img src ="/noise2.png" width = 30% height = 30%/>
+</p>
 - The primary difficulty I faced was getting the rows to repeat; the first row would be drawn perfectly, but the susbequent ones were not appearing. I fixed this by editing the method within the class so that it accepts the number telling it what row the program is at. This way, the method determines the row by how many rows have already been counted, rather than having the `for()` telling it what the current row is.
 
 # Video of My Artwork
