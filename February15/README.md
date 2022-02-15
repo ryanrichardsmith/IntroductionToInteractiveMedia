@@ -1,5 +1,6 @@
 # Background
 - Although I had no idea what direction to take the broad category of "generative art" in, I eventually found myself at the Louvre. There, I was inspired by their modern art section, and I used this particular painting as my inspiration:
+  
   <img src ="inspiration.png" width = 30% height = 30%>
 
 - Although I liked the concentric circles, I decided to change them to squares, as I thought that would be more interesting due to the lack of white space between them (since each square's side is either adjacent to another square or the edges)
