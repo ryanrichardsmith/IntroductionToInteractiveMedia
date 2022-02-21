@@ -6,9 +6,12 @@ function preload() {
   songs = loadStrings("songs.csv");
 }
 
-//declaring the variable category (which will be used when randomly determining the vibe of the playlist) so it can be accessed both in the preload() and draw() functions
+//declaring the variable 'category' (which will be used when randomly determining the vibe of the playlist) so it can be accessed both in the preload() and draw() functions
 
 let category;
+
+//declaring the xCoordinate variable which will be used to place each row at a random place.
+let xCoordinate;
 
 function setup() {
   createCanvas(600, 400);
@@ -19,6 +22,12 @@ function setup() {
 
 function draw() {
   background(0);
+  
+  //slowing down the frame rate so song names are legible
+  frameRate(2)
+  
+  //giving the x coordinate a random initial value so it can be called by the category heading, which happens before the loop to display each song
+  xCoordinate = round(random(0,100));
   
   //Each song in each playlist is by one of these singers; the array is used so the names can easily be grabbed and matched with the corresponding song.
   let singers = [
@@ -53,9 +62,12 @@ function draw() {
   if (category == 0) { //conditional statement if the chill vibe (0) is selected
     fill(176, 38, 255);
     
-    text("CHILL VIBES", 0, 60);
+    text("CHILL VIBES", xCoordinate, 60);
 
     for (let i = 0; i < 10; i++) { //for loop to go over each row in the csv file
+      
+      //randomly deciding where the beginning of each row will go
+      xCoordinate = round(random(0,100));
       
       if (colorPicker % 2 == 0) { //if statement to make sure each subsequent line is a different color 
         fill(176, 38, 255);
@@ -67,7 +79,7 @@ function draw() {
 
       //assigning the song (correspnding to the vibe denoted by the category variable) to a variable & displaying it with its respective artist
       song = singleRow[category]; 
-      text(song + " - " + singers[i], 0, yCoordinate);
+      text(song + " - " + singers[i], xCoordinate, yCoordinate);
       
       //incrementing the colorPicker variable to ensure alternating pattern & the yCoordinate to ensure each song is on its own line
       colorPicker++;
@@ -75,7 +87,7 @@ function draw() {
     }
 
     fill(255);
-    text("CHILL VIBES", 0, yCoordinate);
+    text("CHILL VIBES", xCoordinate, yCoordinate);
   
   } else {
     
@@ -83,9 +95,11 @@ function draw() {
       
       fill(12, 191, 233);
       
-      text("SAD VIBES", 0, 60);
+      text("SAD VIBES", xCoordinate, 60);
       
       for (let i = 0; i < 10; i++) {
+        
+        xCoordinate = round(random(0,100));
         
         if (colorPicker % 2 == 0) {
           fill(12, 191, 233);
@@ -96,14 +110,14 @@ function draw() {
         singleRow = split(songs[i], ",");
         
         song = singleRow[category];
-        text(song + " - " + singers[i], 0, yCoordinate);
+        text(song + " - " + singers[i], xCoordinate, yCoordinate);
         
         colorPicker++;
         yCoordinate = yCoordinate + size;
       }
       
       fill(255);
-      text("SAD VIBES", 0, yCoordinate);
+      text("SAD VIBES", xCoordinate, yCoordinate);
       
     } else {
       
@@ -111,9 +125,12 @@ function draw() {
         
         fill(57, 255, 20);
         
-        text("CONFIDENCE BOOST VIBES", 0, 60);
+        text("CONFIDENCE BOOST VIBES", xCoordinate, 60);
         
         for (let i = 0; i < 10; i++) {
+          
+          xCoordinate = round(random(0,100));
+          
           if (colorPicker % 2 == 0) {
             
             fill(57, 255, 20);
@@ -125,14 +142,14 @@ function draw() {
           
           song = singleRow[category];
           
-          text(song + " - " + singers[i], 0, yCoordinate);
+          text(song + " - " + singers[i], xCoordinate, yCoordinate);
           
           colorPicker++;
           yCoordinate = yCoordinate + size;
         }
         
         fill(255);
-        text("CONFIDENCE BOOST VIBES", 0, yCoordinate);
+        text("CONFIDENCE BOOST VIBES", xCoordinate, yCoordinate);
         
       } else {
         
@@ -140,9 +157,11 @@ function draw() {
           
           fill(255, 16, 240);
           
-          text("DANCE PARTY VIBES", 0, 60);
+          text("DANCE PARTY VIBES", xCoordinate, 60);
           
           for (let i = 0; i < 10; i++) {
+            
+            xCoordinate = round(random(0,100));
             
             if (colorPicker % 2 == 0) {
               fill(255, 16, 240);
@@ -153,14 +172,14 @@ function draw() {
             singleRow = split(songs[i], ",");
             
             song = singleRow[category];
-            text(song + " - " + singers[i], 0, yCoordinate);
+            text(song + " - " + singers[i], xCoordinate, yCoordinate);
             
             colorPicker++;
             yCoordinate = yCoordinate + size;
           }
           
           fill(255);
-          text("DANCE PARTY VIBES", 0, yCoordinate);
+          text("DANCE PARTY VIBES", xCoordinate, yCoordinate);
           
         } else {
           
@@ -168,9 +187,11 @@ function draw() {
             
             fill(255, 240, 31);
             
-            text("HAPPY VIBES", 0, 60);
+            text("HAPPY VIBES", xCoordinate, 60);
             
             for (let i = 0; i < 10; i++) {
+              
+              xCoordinate = round(random(0,100));
               
               if (colorPicker % 2 == 0) {
                 fill(255, 240, 31);
@@ -181,23 +202,25 @@ function draw() {
               singleRow = split(songs[i], ",");
               
               song = singleRow[category];
-              text(song + " - " + singers[i], 0, yCoordinate);
+              text(song + " - " + singers[i], xCoordinate, yCoordinate);
               
               colorPicker++;
               yCoordinate = yCoordinate + size;
             }
             
             fill(255);
-            text("HAPPY VIBES", 0, yCoordinate);
+            text("HAPPY VIBES", xCoordinate, yCoordinate);
           } else {
             
             if (category == 5) { //conditional statement if the throwback vibe (5) is selected
               
               fill(255, 95, 31);
               
-              text("THROWBACK VIBES", 0, 60);
+              text("THROWBACK VIBES", xCoordinate, 60);
               
               for (let i = 0; i < 10; i++) {
+                
+                xCoordinate = round(random(0,100));
                 
                 if (colorPicker % 2 == 0) {
                   fill(255, 95, 31);
@@ -208,14 +231,14 @@ function draw() {
                 singleRow = split(songs[i], ",");
                 
                 song = singleRow[category];
-                text(song + " - " + singers[i], 0, yCoordinate);
+                text(song + " - " + singers[i], xCoordinate, yCoordinate);
                 
                 colorPicker++;
                 yCoordinate = yCoordinate + size;
               }
               
               fill(255);
-              text("THROWBACK VIBES", 0, yCoordinate);
+              text("THROWBACK VIBES", xCoordinate, yCoordinate);
               
             } else {
               
@@ -223,9 +246,11 @@ function draw() {
                 
                 fill(255, 49, 49);
                 
-                text("KARAOKE VIBES", 0, 60);
+                text("KARAOKE VIBES", xCoordinate, 60);
                 
                 for (let i = 0; i < 10; i++) {
+                  
+                  xCoordinate = round(random(0,100));
                   
                   if (colorPicker % 2 == 0) {
                     fill(255, 49, 49);
@@ -237,14 +262,14 @@ function draw() {
                   
                   song = singleRow[category];
                   
-                  text(song + " - " + singers[i], 0, yCoordinate);
+                  text(song + " - " + singers[i], xCoordinate, yCoordinate);
                   
                   colorPicker++;
                   yCoordinate = yCoordinate + size;
                 }
                 
                 fill(255);
-                text("KARAOKE VIBES", 0, yCoordinate);
+                text("KARAOKE VIBES", xCoordinate, yCoordinate);
               }
             }
           }
