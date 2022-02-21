@@ -9,3 +9,6 @@
   - I originally wanted to incorporate translations to do a sliding movement, whereby as one part of the song title goes off the right edge of the canvas, it would reappear from the left side, with each row moving at a different speed. Unfortunately, I was unsure of how to do this, so I instead opted to randomly assign an x coordinate to each song title every time the background is drawn, slowing down the frame rate in order to make the titles easy to read. Despite looking a bit choppy, I think the movement is better than plain text. Once we start working with sound, I think it would also be cool to synchronize the movement of the text with music.
 
 # Video of My Assignment
+
+https://user-images.githubusercontent.com/98512630/154932233-aba8b217-41a9-4d06-b12f-2dd0d1baa596.mov
+
