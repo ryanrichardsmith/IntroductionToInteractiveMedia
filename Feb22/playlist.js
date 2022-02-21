@@ -1,4 +1,5 @@
-//declaring the array to store the songs from the csv as a global variable so it can be accessed both in the preload() and draw() functions
+//declaring the array to store the songs from the csv as a global variable 
+//so it can be accessed both in the preload() and draw() functions
 let songs = [];
 
 function preload() {
@@ -6,11 +7,14 @@ function preload() {
   songs = loadStrings("songs.csv");
 }
 
-//declaring the variable 'category' (which will be used when randomly determining the vibe of the playlist) so it can be accessed both in the preload() and draw() functions
+//declaring the variable 'category' (which will be used when randomly 
+//determining the vibe of the playlist) so 
+//it can be accessed both in the preload() and draw() functions
 
 let category;
 
-//declaring the xCoordinate variable which will be used to place each row at a random place.
+//declaring the xCoordinate variable which will be used 
+//to place each row at a random place.
 let xCoordinate;
 
 function setup() {
@@ -26,10 +30,14 @@ function draw() {
   //slowing down the frame rate so song names are legible
   frameRate(2)
   
-  //giving the x coordinate a random initial value so it can be called by the category heading, which happens before the loop to display each song
+  //giving the x coordinate a random initial value 
+  //so it can be called by the category heading, 
+  //which happens before the loop to display each song
   xCoordinate = round(random(0,100));
   
-  //Each song in each playlist is by one of these singers; the array is used so the names can easily be grabbed and matched with the corresponding song.
+  //Each song in each playlist is by one of these singers; 
+  //the array is used so the names can easily be grabbed and matched 
+  //with the corresponding song.
   let singers = [
     "BEYONCE",
     "NICKI MINAJ",
@@ -43,12 +51,17 @@ function draw() {
     "TAYLOR SWIFT",
   ];
 
-  //Each row in the csv file has songs by the same artist, and the index of each song corresponds to its vibe; for example, songs at index 0 of each row have a chill vibe
+  //Declaring the array used to store the songs of a given artist;
+  //This works because each row in the csv file has songs by the same artist, 
+  //and the index of each song corresponds to its vibe. 
+  //for example, songs at index 0 of each row have a chill vibe
   let singleRow = [];
   
-  //initializing the variable that will later be used to create the alternating fill pattern
+  //initializing the variable that will later be used 
+  //to create the alternating fill pattern
   let colorPicker = 1;
   
+  //Selecting the font of all the rows & bolding them
   textFont("Helvetica", 25);
   textStyle(BOLD);
   
@@ -56,17 +69,18 @@ function draw() {
   const size = 30;
   textSize(size);
   
-  //initializing the variable that will be used to place each row just below the other
+  //initializing the variable that will be used to place each row 
+  //just below the other
   let yCoordinate = 90;
 
-  if (category == 0) { //conditional statement if the chill vibe (0) is selected
+  if (category == 0) { //conditional statement for when the chill vibe (0) is selected
     fill(176, 38, 255);
     
     text("CHILL VIBES", xCoordinate, 60);
 
     for (let i = 0; i < 10; i++) { //for loop to go over each row in the csv file
       
-      //randomly deciding where the beginning of each row will go
+      //randomly deciding where the beginning of each row will go for movement
       xCoordinate = round(random(0,100));
       
       if (colorPicker % 2 == 0) { //if statement to make sure each subsequent line is a different color 
@@ -77,11 +91,13 @@ function draw() {
 
       singleRow = split(songs[i], ","); //assigning each singer's row to the singleRow array
 
-      //assigning the song (correspnding to the vibe denoted by the category variable) to a variable & displaying it with its respective artist
+      //assigning the song (correspnding to the vibe denoted by the category variable) 
+      //to a variable & displaying it with its respective artist
       song = singleRow[category]; 
       text(song + " - " + singers[i], xCoordinate, yCoordinate);
       
-      //incrementing the colorPicker variable to ensure alternating pattern & the yCoordinate to ensure each song is on its own line
+      //incrementing the colorPicker variable to ensure alternating pattern 
+      //& the yCoordinate to ensure each song is on its own line
       colorPicker++;
       yCoordinate = yCoordinate + size;
     }
@@ -91,7 +107,9 @@ function draw() {
   
   } else {
     
-    if (category == 1) { //conditional statement if the sad vibe (1) is selected
+    //conditional statement if the sad vibe (1) is selected
+    //which follows the same pattern as the chill vibe
+    if (category == 1) { 
       
       fill(12, 191, 233);
       
@@ -121,7 +139,9 @@ function draw() {
       
     } else {
       
-      if (category == 2) { //conditional statement if the confidence boost vibe (2) is selected
+      //conditional statement if the confidence boost vibe (2) is selected
+      //which follows the same pattern as the chill vibe
+      if (category == 2) {
         
         fill(57, 255, 20);
         
@@ -153,7 +173,9 @@ function draw() {
         
       } else {
         
-        if (category == 3) { //conditional statement if the dance party vibe (3) is selected
+        //conditional statement if the dance party vibe (3) is selected
+        //which follows the same pattern as the above vibes
+        if (category == 3) { 
           
           fill(255, 16, 240);
           
@@ -183,7 +205,9 @@ function draw() {
           
         } else {
           
-          if (category == 4) { //conditional statement if the happy vibe (4) is selected
+          //conditional statement if the happy vibe (4) is selected
+          //which follows the same pattern as the above vibes
+          if (category == 4) {
             
             fill(255, 240, 31);
             
@@ -212,7 +236,9 @@ function draw() {
             text("HAPPY VIBES", xCoordinate, yCoordinate);
           } else {
             
-            if (category == 5) { //conditional statement if the throwback vibe (5) is selected
+            //conditional statement if the throwback vibe (5) is selected
+            //which follows the same pattern as the above vibes
+            if (category == 5) { 
               
               fill(255, 95, 31);
               
@@ -242,7 +268,9 @@ function draw() {
               
             } else {
               
-              if (category == 6) { //conditional statement if the karaoke vibe (6) is selected
+              //conditional statement if the karaoke vibe (6) is selected
+              //which follows the same pattern as the above vibes
+              if (category == 6) { 
                 
                 fill(255, 49, 49);
                 
