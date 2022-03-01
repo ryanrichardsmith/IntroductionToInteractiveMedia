@@ -1,6 +1,6 @@
 ### Initial Concept
 The game in my midterm project is inspired by the ancient Greek epic, the Odyssey. Circe, an evil witch, has turned the warrior Odysseus into a dog, but now she must make a potion to change him back, else risk the wrath of the goddess Athena (Odysseus's mother). The user must help Circe by collecting ingredients safe for Odysseus to consume in canine form, while disregarding those which are unsafe for him to eat. Falling from the top of the screen will be randomly generated dog-friendly foods (bacon, chicken, fish, bread & peanut butter) and dog-unfriendly foods (chocolate, ice cream, garlic avocado & grapes). With each item falling at a randomly generated speed, the aim is to have the good food land in the cauldron at the bottom of the screen and avoid letting the bad food land in the cauldron. The longer a player lasts in the game, the faster the items should descend and in greater volumes. The player will be able to control the position of the witch's cauldron with their mouse, and each time a bad food item enters the cauldron, the player gets a strike. After three strikes the player loses the game, and their final score is determined by how long they lasted.
-![IMG_0168](https://user-images.githubusercontent.com/98512630/156116421-3d2d85cf-975a-4522-95ec-a0c563378764.jpg | width=100)
+![IMG_0168](https://user-images.githubusercontent.com/98512630/156116421-3d2d85cf-975a-4522-95ec-a0c563378764.jpg = 250x250)
 
 
 ### The Most Complicated Part of this Project
