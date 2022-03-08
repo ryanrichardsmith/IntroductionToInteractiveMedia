@@ -10,4 +10,6 @@ Unfortunately, I was not able to figure these things out before class time. At t
 
 ## Midterm Project Version 1
 ### Initial Concept (V.1)
-Unfortunately, after a week of working on the aforementioned idea, I decided that it would be best to try another project as it did not seem that I was likely to complete it. This led me
+Unfortunately, after a week of working on the aforementioned idea, I decided that it would be best to try another project as it did not seem that I was likely to complete it. I was eventually inspired by the instagram filter game where a user has to select the odd one out of a group of very similar items:
+https://user-images.githubusercontent.com/98512630/157258631-39132d88-23bf-497f-90ee-843771a4ea4c.mp4
+
