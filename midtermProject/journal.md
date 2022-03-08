@@ -11,4 +11,5 @@ Unfortunately, I was not able to figure these things out before class time. At t
 ## Midterm Project Version 1
 ### Initial Concept (V.1)
 Unfortunately, after a week of working on the aforementioned idea, I decided that it would be best to try another project as it did not seem that I was likely to complete it. I was eventually inspired by the instagram filter game where a user has to select the odd one out of a group of very similar items:
+
 https://user-images.githubusercontent.com/98512630/157259180-6bb2c218-4e57-4dd2-872e-f97570a7b5c6.mp4
