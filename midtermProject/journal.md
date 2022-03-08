@@ -56,7 +56,8 @@ class drawFish {
 - Using the ````mouseClicked()```` function, I managed to create a state for each phase of the game: one for the instruction screen, one for during the gameplay, and one for when the game is lost.
 - A lost game is when the player clicks the mouse at a point that is a greater distance away from the fish's center than the fish's width. A limitation this poses is that the player may get the point by clicking a little above or below the actual fish, and this is because the fish's body is an ellipse which means that the height is not equal to the width. On that note, maybe (circular) puffer fish may have been easier to work with.
 - Since I did not want fish to be repeatedly drawn multiple times a second (independent of the user's actions), the `mouseClicked()` function handles the majority of operations in my program, and it is provided below: 
-`  //game play state
+````  
+//game play state
   if (state === 0) {
     createCanvas(600, 400);
     image(scenery, 0, 0, 600, 400);
@@ -133,7 +134,8 @@ class drawFish {
     state = 0;
     score = 0;
   }
-}`
+}
+````
 
 ## Update #3
 - Having completed the most challenging aspects, I was ready to add the finishing touches, namely the required texts and sounds.
