@@ -54,7 +54,7 @@ function setup() {
     175
   );
   text(
-    "Use the mouse to click on the real fish twice on its center.",
+    "Use the mouse to double click on the real fish.",
     textXPos,
     200
   );
@@ -137,7 +137,7 @@ function mouseClicked() {
     //the fish's center to win a point
   } else if (
     state === 1 &&
-    dist(uniqueFishX, uniqueFishY, mouseX, mouseY) < 50
+    dist(uniqueFishX, uniqueFishY, mouseX, mouseY) < 100
   ) {
     //updating the player's score if they clicked the right
     //fish
@@ -154,7 +154,7 @@ function mouseClicked() {
     //the fish's center to win a point
   } else if (
     state === 1 &&
-    dist(uniqueFishX, uniqueFishY, mouseX, mouseY) > 50
+    dist(uniqueFishX, uniqueFishY, mouseX, mouseY) > 100
   ) {
     //if the player clicked the wrong fish, it switches to the
     //game over state
