@@ -49,3 +49,100 @@ class drawFish {
 - I also used an image for the background. See the current status of the project below:
 <img width="400" alt="Screenshot 2022-03-08 at 9 30 05 PM" src="https://user-images.githubusercontent.com/98512630/157293100-6c88ed70-96e3-4293-b4a2-85f4fbd76cff.png">
 
+## Update #2
+- Using the `mouseClicked()` function, I managed to create a state for each phase of the game: one for the instruction screen, one for during the gameplay, and one for when the game is lost.
+- A lost game is when the player clicks the mouse at a point that is a greater distance away from the fish's center than the fish's width. A limitation this poses is that the player may get the point by clicking a little above or below the actual fish, and this is because the fish's body is an ellipse which means that the height is not equal to the width. On that note, maybe (circular) puffer fish may have been easier to work with.
+- Since I did not want fish to be repeatedly drawn multiple times a second (independent of the user's actions), the `mouseClicked()` function handles the majority of operations in my program, and it is provided below: 
+`  //game play state
+  if (state === 0) {
+    createCanvas(600, 400);
+    image(scenery, 0, 0, 600, 400);
+
+    //randomly generating the color of the regular fish
+    fishColor = random(50, 255);
+
+    //using a for loop to randomly assign an x and y coordinate
+    //to the 'center' of each of the 6 regular fish
+    for (n = 0; n < 7; n++) {
+      fishX = random(offset, width - offset);
+      fishY = random(offset, height - offset);
+
+      //using the class's method to draw the fish
+      fish = new drawFish(fishX, fishY, fishColor);
+      fish.draw();
+    }
+
+    //assigning random x and y coordinates and a slightly
+    //different color to the unique fish and using the same
+    //class methods to draw it
+    uniqueFishX = random(offset, width - offset);
+    uniqueFishY = random(offset, height - offset);
+    fish = new drawFish(uniqueFishX, uniqueFishY, fishColor - 20);
+    fish.draw();
+
+    //changing the state to the one where the player picks a
+    //fish (1) and their decision is determined as right or
+    //wrong.
+    state++;
+
+    //Determining whether the player clicked close enough to
+    //the fish's center to win a point
+  } else if (
+    state === 1 &&
+    dist(uniqueFishX, uniqueFishY, mouseX, mouseY) < 100
+  ) {
+    //updating the player's score if they clicked the right
+    //fish
+    score++;
+
+    //playing the sound effect for a correct guess
+    correct.play();
+
+    //reverting the state back to the initial game play stage
+    //where the fish are drawn
+    state = 0;
+
+    //Determining whether the player clicked too far away from
+    //the fish's center to win a point
+  } else if (
+    state === 1 &&
+    dist(uniqueFishX, uniqueFishY, mouseX, mouseY) > 100
+  ) {
+    //if the player clicked the wrong fish, it switches to the
+    //game over state
+    state = 2;
+
+    //playing sound effect for wrong guesses
+    wrong.play();
+
+    //changing background to red, signalling the game is over,
+    //displaying the final score and prompting the user to           //restart
+    background(255, 0, 0);
+    textFont("Rockwell", 50);
+    text("YOU HAVE PERISHED", 25, 50);
+    text("GAME OVER", 130, 100);
+    text("Score: " + score, 190, 200);
+    text("Click the mouse", 25, 300);
+    text("anywhere to restart", 25, 340);
+
+    //if the user chooses to restart, the state reverts back
+    //to the initial gameplay one and the score is reset.
+    state = 0;
+    score = 0;
+  }
+}`
+
+## Update #3
+- Having completed the most challenging aspects, I was ready to add the finishing touches, namely the required texts and sounds.
+- Without the ability to wrap text, I had to ensure that the number of of words in each line of the instructions did not result in the line trailing off the screen, which was a bit frustrating.
+- For the sounds, I decided to have a somewhat positive tone when the user clicks the correct fish, and a somehwat negative tone when they click an inorrect fish.
+- I Faced difficulties with loading the sounds because I had not remembered 1) the importance of the sound library in the index.html file and 2) how to load a sound file when it is in a folder 
+- For future reference, the sound library can be loaded by placing `<script src="path/to/p5.sound.js"></script>` in the head of the index.html file, and if the sound files are in a folder the format should be `loadSound('folderName/soundFile.mp3'`
+- The free stock sound effects on the Mixkit website were very helpful in providing the user with signifiers that had positive/negative moods: https://mixkit.co
+
+## Update 4
+- There are multiple modifications I would like to make to my game: first, I would like to add a timer that causes the player to lose the game if they do not make a selection within a small timeframe, second, the game currently requires 2 clicks to change states instead of one, and I would like to fix that/
+- However, after having my friends (who are majoring in computer science) take a look at my code, they could not see a way through these issues when taking into account the way I had designed my code. From experimenting with the `deltaTime()` function to moving segments of code from `mouseClicked()` to changing the number of states, among other techniques, it felt like we tried everything. 
+- Although I wish my code could be exactly as I had envisioned it, I am proud of myself for trying my best to fix these bugs and coming up with an adequately entertaining game. Below is the final version of my game, prior to user testing:
+
+https://user-images.githubusercontent.com/98512630/157302243-1c9af384-4d10-4a7c-abed-ba4d43ae52b9.mp4
