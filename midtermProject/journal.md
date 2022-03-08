@@ -15,7 +15,8 @@ Unfortunately, after a week of working on the aforementioned idea, I decided tha
 https://user-images.githubusercontent.com/98512630/157259180-6bb2c218-4e57-4dd2-872e-f97570a7b5c6.mp4
 
 Because I liked the idea of an underwater background, I decided to make the user have the role of a fisher, selecting the odd one out of the fish (in this case, the slightly darker fish is real while the others are fake). Below is an early sketch of what I aimed to do:
-![IMG_0172](https://user-images.githubusercontent.com/98512630/157290365-173a9a97-74d8-4c8d-97f4-3a5d6713772c.jpg)
+<img width="521" alt="IMG_0172-2" src="https://user-images.githubusercontent.com/98512630/157304180-bba0a11a-59a8-4769-8b29-71c992dc3893.png">
+
 
 ## Update #1
 - I successfully created a class to create and display the regular fishes as well as the unique fishes in random positions:
