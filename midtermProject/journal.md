@@ -47,5 +47,5 @@ class drawFish {
   }
 }`
 - I also used an image for the background. See the current status of the project below:
-<img width="609" alt="Screenshot 2022-03-08 at 9 30 05 PM" src="https://user-images.githubusercontent.com/98512630/157293100-6c88ed70-96e3-4293-b4a2-85f4fbd76cff.png">
+<img width="400" alt="Screenshot 2022-03-08 at 9 30 05 PM" src="https://user-images.githubusercontent.com/98512630/157293100-6c88ed70-96e3-4293-b4a2-85f4fbd76cff.png">
 
