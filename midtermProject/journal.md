@@ -19,6 +19,7 @@ Because I liked the idea of an underwater background, I decided to make the user
 
 ## Update #1
 - I successfully created a class to create and display the regular fishes as well as the unique fishes in random positions:
+
 `//creating a class to draw each fish using randomly generated
 //x and y coordinates as well as colors
 class drawFish {
