@@ -13,3 +13,39 @@ Unfortunately, I was not able to figure these things out before class time. At t
 Unfortunately, after a week of working on the aforementioned idea, I decided that it would be best to try another project as it did not seem that I was likely to complete it. I was eventually inspired by the instagram filter game where a user has to select the odd one out of a group of very similar items:
 
 https://user-images.githubusercontent.com/98512630/157259180-6bb2c218-4e57-4dd2-872e-f97570a7b5c6.mp4
+
+Because I liked the idea of an underwater background, I decided to make the user have the role of a fisher, selecting the odd one out of the fish (in this case, the slightly darker fish is real while the others are fake). Below is an early sketch of what I aimed to do:
+![IMG_0172](https://user-images.githubusercontent.com/98512630/157290365-173a9a97-74d8-4c8d-97f4-3a5d6713772c.jpg)
+
+## Update #1
+- I successfully created a class to create and display the regular fishes as well as the unique fishes in random positions:
+`//creating a class to draw each fish using randomly generated
+//x and y coordinates as well as colors
+class drawFish {
+  constructor(xCoordinate, yCoordinate, color) {
+    this.x = xCoordinate;
+    this.y = yCoordinate;
+    this.fill = color;
+  }
+
+  //using shapes to draw the fish at random positions
+  draw() {
+    fill(this.fill);
+    triangle(
+      this.x - 20,
+      this.y,
+      this.x - 75,
+      this.y + 20,
+      this.x - 75,
+      this.y - 20
+    );
+    ellipse(this.x, this.y, 100, 50);
+    fill(255);
+    circle(this.x + 30, this.y, 20);
+    fill(0);
+    circle(this.x + 30, this.y, 10);
+  }
+}`
+- I also used an image for the background. See the current status of the project below:
+<img width="609" alt="Screenshot 2022-03-08 at 9 30 05 PM" src="https://user-images.githubusercontent.com/98512630/157293100-6c88ed70-96e3-4293-b4a2-85f4fbd76cff.png">
+
