@@ -20,7 +20,7 @@ Because I liked the idea of an underwater background, I decided to make the user
 ## Update #1
 - I successfully created a class to create and display the regular fishes as well as the unique fishes in random positions:
 
-`//creating a class to draw each fish using randomly generated
+````//creating a class to draw each fish using randomly generated
 //x and y coordinates as well as colors
 class drawFish {
   constructor(xCoordinate, yCoordinate, color) {
@@ -46,7 +46,8 @@ class drawFish {
     fill(0);
     circle(this.x + 30, this.y, 10);
   }
-}`
+}
+````
 - I also used an image for the background. See the current status of the project below:
 <img width="400" alt="Screenshot 2022-03-08 at 9 30 05 PM" src="https://user-images.githubusercontent.com/98512630/157293100-6c88ed70-96e3-4293-b4a2-85f4fbd76cff.png">
 
