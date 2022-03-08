@@ -9,8 +9,8 @@ function preload() {
   scenery = loadImage("https://thumbs.dreamstime.com/b/underwater-cartoon-flat-background-fish-silhouette-sand-seaweed-coral-ocean-sea-life-cute-design-underwater-cartoon-flat-121517052.jpg")
   
   //loading the sound effects for correct and wrong guesses
-  wrong = loadSound("sounds/wrong.mp3");
-  correct = loadSound("sounds/correct.mp3");
+  wrong = loadSound("wrong.mp3");
+  correct = loadSound("correct.mp3");
 }
 
 //declaring the variable used to change between the instruction & initial drawing (0), game play (1), and game over (2) states
