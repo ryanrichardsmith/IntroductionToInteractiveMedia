@@ -152,3 +152,11 @@ class drawFish {
 - Although I wish my code could be exactly as I had envisioned it, I am proud of myself for trying my best to fix these bugs and coming up with an adequately entertaining game. Below is the final version of my game, prior to user testing:
 
 https://user-images.githubusercontent.com/98512630/157302243-1c9af384-4d10-4a7c-abed-ba4d43ae52b9.mp4
+
+## User Testing
+- I had three friends play my game and receieved the following feedback:
+- People seemed to easily focus on my game and not get distracted, which I believe is a sign of good interactivity.
+- The sound effects seemed to be good signifiers. One friend describe the sound effect for whent the game is lost as "terrifying" and I observed that this actually influenced her behavior: the jarring sound caused her to focus more on the game, increasign the chances of her successfully finding the real fish. 
+- On the flip side, another friend described the sound when a correct fish is chosen as "addicting," causing them to be more likely to choose the correct fish and thus interact with the game more purposefully.
+- As expected, having to double-click the fish proved to be an issue. Although it is in the instructions, the players quickly forgot that they had to click twice, which led to confusion during game play. Moreover, double-clicking the incorrect fish would cause the losing screen to disappear after an unreasonable amount of time, which meant there was inconsistency between the right and wrong actions.
+- This reflects that single-slicking is a better signifier of the affordance between the user and the game, and I hope to improve this issue in the future (however, as stated above, I was unable to at the current moment). 
