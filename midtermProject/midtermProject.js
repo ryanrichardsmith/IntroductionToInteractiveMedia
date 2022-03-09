@@ -54,7 +54,7 @@ function setup() {
     175
   );
   text(
-    "Use the mouse to double click on the real fish.",
+    "Use the mouse to double click on the real fish on its center.",
     textXPos,
     200
   );
@@ -70,7 +70,7 @@ function setup() {
 //second, I decided to not use draw
 function draw() {}
 
-//creating a class to drae each fish using randomly generated
+//creating a class to draw each fish using randomly generated
 //x and y coordinates as well as colors
 class drawFish {
   constructor(xCoordinate, yCoordinate, color) {
@@ -137,7 +137,7 @@ function mouseClicked() {
     //the fish's center to win a point
   } else if (
     state === 1 &&
-    dist(uniqueFishX, uniqueFishY, mouseX, mouseY) < 100
+    dist(uniqueFishX, uniqueFishY, mouseX, mouseY) < 50
   ) {
     //updating the player's score if they clicked the right
     //fish
@@ -154,7 +154,7 @@ function mouseClicked() {
     //the fish's center to win a point
   } else if (
     state === 1 &&
-    dist(uniqueFishX, uniqueFishY, mouseX, mouseY) > 100
+    dist(uniqueFishX, uniqueFishY, mouseX, mouseY) > 50
   ) {
     //if the player clicked the wrong fish, it switches to the
     //game over state
