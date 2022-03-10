@@ -49,20 +49,9 @@ function setup() {
   text("On each screen, some fish will randomly appear.", textXPos, 125);
   text("However, all of them are fake, except one.", textXPos, 150);
   text(
-    "The real fish is a slightly different color so keep a sharp eye!",
-    textXPos,
-    175
-  );
-  text(
-    "Use the mouse to double click on the real fish on its center.",
-    textXPos,
-    200
-  );
-  text(
-    "But be warned: If you click on the fake one, you will be poisoned.",
-    textXPos,
-    225
-  );
+    "The real fish is a slightly different color so keep a sharp eye!", textXPos, 175);
+  text("Use the mouse to double click on the real fish on its center.", textXPos, 200);
+  text("But be warned: If you click on the fake one, you will be poisoned.", textXPos, 225);
   text("Click the mouse anywhere to continue.", textXPos, 250);
 }
 
