@@ -1,7 +1,7 @@
 ## Description
 The purpose of this switch is to dissuade the user from procrastinating by scrolling through Instagram. I relied on traditional signifiers of green meaning “go” or “continue” and red meaning “stop.” When the phone is set down and the user is typing, this means they are doing their homework, which is why the green light is illuminated; this signals that they should continue doing their homework. When the user lifts the phone to start scrolling, the red light is illuminated, visually admonishing the user for procrastinating.
 
-[![DEMO](https://user-images.githubusercontent.com/98512630/160858901-0d417dcc-61ce-481a-aca0-1b14b3167cb9.png")](https://youtu.be/K1EO-e7GrEY)
+[![DEMO](https://user-images.githubusercontent.com/98512630/160858901-0d417dcc-61ce-481a-aca0-1b14b3167cb9.png")](https://youtu.be/K1EO-e7GrEY "DEMO")
 
 
 ## Process
