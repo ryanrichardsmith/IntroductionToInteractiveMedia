@@ -44,4 +44,4 @@ I also used double-sided tape to attach the wires to the phone and desk.
 ## Circuit Photos 
 Connected (Left) vs. Disconnected Switch (Right) 
 
-<img src ="greenlight.jpg" width = 50% height = 50%><img src ="redlight.jpg" width = 50% height = 50%>
+<img src ="greenlight.jpg" width = 50% height = 50%> <img src ="redlight.jpg" width = 50% height = 50%>
