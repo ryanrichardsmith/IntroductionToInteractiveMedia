@@ -1,7 +1,8 @@
 ## Description
 The purpose of this switch is to dissuade the user from procrastinating by scrolling through Instagram. I relied on traditional signifiers of green meaning “go” or “continue” and red meaning “stop.” When the phone is set down and the user is typing, this means they are doing their homework, which is why the green light is illuminated; this signals that they should continue doing their homework. When the user lifts the phone to start scrolling, the red light is illuminated, visually admonishing the user for procrastinating.
 
-[![IMAGE ALT TEXT HERE](https://youtu.be/K1EO-e7GrEY)
+[![DEMO](https://user-images.githubusercontent.com/98512630/160858901-0d417dcc-61ce-481a-aca0-1b14b3167cb9.png")](https://youtu.be/K1EO-e7GrEY)
+
 
 ## Process
 I created the following short program to use the green light as an input and the red light as an output. When the wire attached to the phone is connected to the green light’s power source, this means `switchStatus` is 1 or HIGH, in which case the user is studying and the green light should light up. Otherwise, `switchStatus` is 0 or LOW which means the user is procrastinating and the red light should be lit up, since the wire attached to the phone would be disconnected from the rest of the circuit (and the phone would be in the user’s hands). 
