@@ -42,4 +42,5 @@ I also used double-sided tape to attach the wires to the phone and desk.
 - I also gained more appreciation for the breadboard as it was kind of hard to connect the narrow, exposed part of the wires without setting the phone down in a very precise location (as evidenced by the glitchy light blinks in my video). Although I tried to enlarge the area of conductivity by taping down the wires with copper tape, that didn't really work out. Next time, I will experiment with conductive fabric or aluminum foil and see if I get a more favorable result.
 
 ## Circuit Photos 
-<img src ="redlight.HEIC" width = 50% height = 50%>
+Connected (Left) vs. Disconnected Switch (Right) 
+  <img src ="greenlight.png" width = 30% height = 30%><img src ="redlight.png" width = 30% height = 30%>
