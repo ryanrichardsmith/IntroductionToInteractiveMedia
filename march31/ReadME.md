@@ -4,7 +4,8 @@ The purpose of this switch is to dissuade the user from procrastinating by scrol
 ## Process
 I created the following short program to use the green light as an input and the red light as an output. When the wire attached to the phone is connected to the green light’s power source, this means `switchStatus` is 1 or HIGH, in which case the user is studying and the green light should light up. Otherwise, `switchStatus` is 0 or LOW which means the user is procrastinating and the red light should be lit up, since the wire attached to the phone would be disconnected from the rest of the circuit (and the phone would be in the user’s hands). 
 
-`//Initializing the variables used to identify the pins corresponding to the two LEDs
+`
+//Initializing the variables used to identify the pins corresponding to the two LEDs
 int redLED = 12;
 int greenLED = 8;
 
@@ -27,7 +28,8 @@ void loop() {
   } else {
     digitalWrite(redLED, HIGH);
   }
-}`
+}
+`
 
 I also used double-sided tape to attach the wires to the phone and desk.
 
