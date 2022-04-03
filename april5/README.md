@@ -13,15 +13,16 @@ For the circuit utilizing the analog sensor, I first found out the frequency of 
 Digital Sensor
 ![IMG_5692](https://user-images.githubusercontent.com/98512630/161448617-89dbe34e-33ed-48c3-a73b-e9b48235aab7.jpg)
 
+Analog Sensor
+![IMG_5696](https://user-images.githubusercontent.com/98512630/161450923-fb56efb0-c06f-448e-840a-92594ebf3e07.jpg)
+
 
 ## Videos
 Digital Sensor
 
 https://user-images.githubusercontent.com/98512630/161448016-429176b9-4542-4863-a064-1514d360993f.mov
 
-Analog Sensor
-
-
+Analog Sensor: https://youtu.be/qMtbDG-ggcs
 
 ## Problems
 Digital Sensor
@@ -36,8 +37,4 @@ Digital Sensor
 ![IMG_0193](https://user-images.githubusercontent.com/98512630/161448064-55a2c42d-f27a-4727-85aa-df389bfa19e3.jpg)
 
 Analog Sensor
-
-
-
-
-
+![IMG_0194](https://user-images.githubusercontent.com/98512630/161450859-611645fb-3a40-4f83-a98d-dc2d280391b9.jpg)
