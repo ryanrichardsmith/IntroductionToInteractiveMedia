@@ -3,6 +3,7 @@ For my first program, I aimed to use the push button as my digital input. I want
 
 
 ## Development Process
+For the circuit utilizing the digitial sensor, I essentially followed the rule of giving each LED its own resistor and power source (in this case the PWM-capable pins) and sharing the ground connection. I also modified an Arduino program based on the fade example we did in class, which allowed the LEDs to fade after one another rather than all at once. Although the program was also supposed to do this based on the push button, I did not get this aspect to work. 
 
 ## Pictures
 Digital Sensor
@@ -10,11 +11,12 @@ Digital Sensor
 
 
 ## Videos
+Digital Sensor
 
 https://user-images.githubusercontent.com/98512630/161448016-429176b9-4542-4863-a064-1514d360993f.mov
 
 ## Problems
-- At first, I could not figure out how to make the LEDs fade in a sequential way, but I found a YouTube video that helped me to realize it was only a matter of breaking up the fade example we learned in class for each LED: https://www.youtube.com/watch?v=-apGA_8SmxY
+- At first, I could not figure out how to make the LEDs fade in a sequential way, but I found a YouTube video that helped me to realize it was only a matter of breaking up the fade example we learned in class for each LED and giving the LEDs different starting values: https://www.youtube.com/watch?v=-apGA_8SmxY
 - Also, ss evidenced by the video, I was unable to figure out how to make the lights pulse only when the user pushes the button, and as a result they do the effect indepdendent of the button. 
 
 ## Schematics
