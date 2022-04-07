@@ -38,3 +38,5 @@ Digital Sensor
 
 Analog Sensor
 ![IMG_0194](https://user-images.githubusercontent.com/98512630/161450859-611645fb-3a40-4f83-a98d-dc2d280391b9.jpg)
+
+
