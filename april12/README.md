@@ -13,7 +13,7 @@ Next, we began working on the digital sensing aspect firstly by attaching popsic
 ![8F1365E3-21EA-4314-A450-3B0798554B94](https://user-images.githubusercontent.com/98512630/162873834-80262729-4c2a-4d31-9bb0-65764ead4cf9.JPG)
 
 ## Video
-[Link to YouTube Video](https://youtube.com/shorts/Gc9cWefoltI?feature=share)
+[Link to YouTube Video](https://youtube.com/shorts/Gc9cWefoltI?feature=share){:target="\_blank"}
 
 ## Problems & Discoveries
 We faced some challenges as we worked on our project:
