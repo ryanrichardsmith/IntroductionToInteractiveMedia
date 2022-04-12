@@ -7,8 +7,8 @@ First, we began working on the analog sensing portion of the instrument. After b
 Next, we began working on the digital sensing aspect firstly by attaching popsicle sticks to the servo motor attachment used in class and attaching the servo motor to the box in order to give it a fixed stance. We first experimented with just one servo motor to determine which angles would work best for the two positions of the sticks (essentially touching the box/not touching the box). We used the servo motor example from class for this, and once we were satisfied with the movement of one of the sticks, we set up the other one and incorporated it into the circuit. The last step was to combine these two test programs by editing them so that they worked smoothly together.
 
 ## Pictures
-<img src="circuit1.JPG" width = 45% height = 45% > <img src="circuit2.jpg" width = 45% height = 45% >
-<img src="circuit3.jpg" width = 45% height = 45% > <img src="circuit4.JPG" width = 45% height = 45% >
+<img src="circuit1.JPG" width = 45% height = 45% > <img src="circuit4.JPG" width = 45% height = 45% > 
+<img src="circuit2.jpg" width = 45% height = 45% > <img src="circuit3.jpg" width = 45% height = 45% > 
 
 ![B3353347-7E4B-4156-B9BE-DB62FE6220E5](https://user-images.githubusercontent.com/98512630/162873384-ed506bc3-7c93-4f9a-a9f7-eab9e1849d41.jpg)
 ![054FA975-37A8-4A45-8B67-476ECB1751FE](https://user-images.githubusercontent.com/98512630/162873422-fc133246-e803-4540-9af2-bf7db271bbc6.jpg)
