@@ -22,10 +22,10 @@ void loop() {
   int buttonState = digitalRead(buttonPin); //reading the input from the push button
   int sensorValue = analogRead(sensorPin); //reading the input from the photoresistor
 
-  if (sensorValue > 550){
-      tone(spkrPin, sensorValue, 2240);
+  if (sensorValue > 550){ //550 was chosen because the light in the IM lab naturally produced a reading of 550 max
+      tone(spkrPin, sensorValue, 2240); //playing a tone depending on the amount of light sensed
   } else if(sensorValue < 550){
-      noTone(spkrPin);
+      noTone(spkrPin); //not playing anything if no light is being directly shin
   }
   
   if (buttonState == HIGH){ //if the button is pushed
@@ -34,19 +34,19 @@ void loop() {
       delay(4);                           // waits 4 ms for the servo to reach the position
     }
     
-    for (pos = 140; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    for (pos = 140; pos >= 0; pos -= 1) { // goes from 140 degrees to 0 degrees
       greenservo.write(pos);              // tell servo to go to position in variable 'pos'
       delay(4);                           // waits 4 ms for the servo to reach the position
     }
   
-    for (pos = 0; pos <= 160; pos += 1) { // goes from 0 degrees to 180 degrees in steps of 1 degree
+    for (pos = 0; pos <= 160; pos += 1) { // goes from 0 degrees to 160 degrees in steps of 1 degree
       yellowservo.write(pos);             // tell servo to go to position in variable 'pos'
-      delay(4);                           // waits 15 ms for the servo to reach the position
+      delay(4);                           // waits 4 ms for the servo to reach the position
     }
     
-    for (pos = 160; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    for (pos = 160; pos >= 0; pos -= 1) { // goes from 160 degrees to 0 degrees
       yellowservo.write(pos);             // tell servo to go to position in variable 'pos'
-      delay(4);                           // waits 15 ms for the servo to reach the position
+      delay(4);                           // waits 4 ms for the servo to reach the position
     }
  
   } else if (buttonState == LOW){
