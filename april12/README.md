@@ -11,3 +11,17 @@ Next, we began working on the digital sensing aspect firstly by attaching popsic
 ![054FA975-37A8-4A45-8B67-476ECB1751FE](https://user-images.githubusercontent.com/98512630/162873422-fc133246-e803-4540-9af2-bf7db271bbc6.jpg)
 ![D6FDD689-83C5-47CA-B437-C1F88CA31FE9](https://user-images.githubusercontent.com/98512630/162873742-bd2d8b5c-d561-4d75-be95-d8cc35ede478.JPG)
 ![8F1365E3-21EA-4314-A450-3B0798554B94](https://user-images.githubusercontent.com/98512630/162873834-80262729-4c2a-4d31-9bb0-65764ead4cf9.JPG)
+
+## Video
+[Link to YouTube Video](https://youtube.com/shorts/Gc9cWefoltI?feature=share)
+
+## Problems & Discoveries
+We faced some challenges as we worked on our project:
+
+- When we switched on the servo motors, the buzzer would stop playing the tone, and would resume when the motors were switched off—i.e., both would not run simultaneously. It took us quite some time to figure out why this was happening, but when we looked at the analog input values of the photoresistor, it turned out that it would slow down a lot when the button was pressed and the motors were running. We later realized that this was caused by the delay function that would run when the switch was pressed, and the tone wasn’t stopping when the switch was on but just delayed so much that it seemed to have stopped. We fixed this by making the tone run for longer, which meant that it didn’t change as rapidly as it did otherwise. But we really liked the way it sounded, so we kept it!
+- Another difficulty we had was getting the servo motor drums to sound loud enough. We ended up experimenting with different sticks and surfaces until we found one that was loud but also easy to put together—a popsicle stick and a hollow box worked really well.
+
+Working on the project together was also quite rewarding—we realized that two heads are often better than one, especially when debugging. Every time we encountered a problem, we would look through each other’s parts of the circuit and the code, which often helped identify the bug easily. Bringing together our ideas to create one final piece was also a very fruitful process.
+
+## Circuit Schematic
+![IMG_0198](https://user-images.githubusercontent.com/98512630/162874787-8257d791-f102-42c6-8fae-d36f64d2ed51.JPG)
