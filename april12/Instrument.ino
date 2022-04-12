@@ -49,7 +49,7 @@ void loop() {
       delay(4);                           // waits 4 ms for the servo to reach the position
     }
  
-  } else if (buttonState == LOW){
+  } else if (buttonState == LOW){ //if the button is not being pushed, the sticks should return to the starting position
       greenservo.write(0); 
       yellowservo.write(0);             
   } 
