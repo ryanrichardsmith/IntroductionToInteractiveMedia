@@ -10,11 +10,6 @@ Next, we began working on the digital sensing aspect firstly by attaching popsic
 <img src="circuit1.JPG" width = 45% height = 45% > <img src="circuit4.JPG" width = 45% height = 45% > 
 <img src="circuit2.jpg" width = 45% height = 45% > <img src="circuit3.jpg" width = 45% height = 45% > 
 
-![B3353347-7E4B-4156-B9BE-DB62FE6220E5](https://user-images.githubusercontent.com/98512630/162873384-ed506bc3-7c93-4f9a-a9f7-eab9e1849d41.jpg)
-![054FA975-37A8-4A45-8B67-476ECB1751FE](https://user-images.githubusercontent.com/98512630/162873422-fc133246-e803-4540-9af2-bf7db271bbc6.jpg)
-![D6FDD689-83C5-47CA-B437-C1F88CA31FE9](https://user-images.githubusercontent.com/98512630/162873742-bd2d8b5c-d561-4d75-be95-d8cc35ede478.JPG)
-![8F1365E3-21EA-4314-A450-3B0798554B94](https://user-images.githubusercontent.com/98512630/162873834-80262729-4c2a-4d31-9bb0-65764ead4cf9.JPG)
-
 ## Video
 [Link to YouTube Video](https://youtube.com/shorts/Gc9cWefoltI?feature=share)
 
